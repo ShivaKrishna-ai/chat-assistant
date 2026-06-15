@@ -181,13 +181,13 @@ APP_ENV=development
 DATABASE_URL=sqlite:///backend/db/datacore_telugu_movies.db
 CHROMA_DB_PATH=backend/rag/chroma_store
 DOCS_PATH=docs
-EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
+EMBEDDING_MODEL=text-embedding-3-large
 
 LLM_PROVIDER=auto
 ANTHROPIC_API_KEY=your_anthropic_api_key_here
 ANTHROPIC_CHAT_MODEL=claude-sonnet-4-0
 OPENAI_API_KEY=your_openai_api_key_here
-OPENAI_CHAT_MODEL=gpt-4o-mini
+OPENAI_CHAT_MODEL=gpt-5.4-mini
 
 CORS_ORIGINS=http://localhost:5173,http://127.0.0.1:5173
 ```
