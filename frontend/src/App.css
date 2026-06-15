@@ -1,0 +1,80 @@
+.app-shell {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.1), transparent 24%),
+    linear-gradient(180deg, #f8fbff 0%, #eef3f9 100%);
+  color: #111827;
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.app-header {
+  padding: 24px 32px;
+  background: linear-gradient(135deg, #0f172a 0%, #172554 100%);
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.app-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.app-subtitle {
+  margin: 8px 0 0;
+  color: #cbd5e1;
+  font-size: 15px;
+}
+
+.app-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(420px, 0.95fr);
+  gap: 24px;
+  padding: 24px 32px 32px;
+  align-items: start;
+}
+
+.app-panel {
+  min-width: 0;
+}
+
+.app-panel--chat {
+  min-height: calc(100vh - 178px);
+}
+
+.app-panel--insights {
+  align-self: start;
+}
+
+@media (max-width: 1120px) {
+  .app-main {
+    grid-template-columns: 1fr;
+  }
+
+  .app-panel--chat {
+    min-height: 640px;
+  }
+}
+
+@media (max-width: 720px) {
+  .app-header {
+    padding: 20px 18px;
+  }
+
+  .app-title {
+    font-size: 24px;
+  }
+
+  .app-subtitle {
+    font-size: 14px;
+  }
+
+  .app-main {
+    gap: 18px;
+    padding: 18px;
+  }
+
+  .app-panel--chat {
+    min-height: 560px;
+  }
+}
